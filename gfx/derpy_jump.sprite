@@ -1,0 +1,11 @@
+{
+	"name":"jump",
+	"image":"derpy.png",
+	"format":"gridSub",
+	"width":96,
+	"height":96,
+	"fps":10,
+	"frames":[163,164,165,166,167,168],
+	"paddingX":14,
+	"paddingY":14
+}

@@ -1,0 +1,12 @@
+{
+	"events":[ "run", "walk", "idle", "jump", "fall", "dead", "end" ],
+	"graph":{ 
+		"idle": { "run":"run", "walk":"walk", "jump":"jump", "dead":"dead", "fall":"fall", "end":"idle" },
+		"run":  { "idle":"idle", "walk":"walk", "jump":"jump", "dead":"dead", "fall":"fall", "end":"run" },
+		"walk": { "idle":"idle", "run":"run", "jump":"jump", "dead":"dead", "fall":"fall", "end":"run" },
+		"jump": { "idle":"idle", "run":"run",  "walk":"walk", "dead":"dead", "fall":"fall", "end":"fall" },
+		"fall": { "idle":"idle", "run":"run",  "walk":"walk", "dead":"dead", "jump":"jump", "end":"fall" },
+		"dead": { "end":"dead" }
+	 },
+	 "defaultState":"idle"
+}

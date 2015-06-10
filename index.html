@@ -1,0 +1,76 @@
+<html>
+<head>
+    <!-- external libraries -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/black-tie/jquery-ui.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="css/images/favicon.png">
+    <script type="text/javascript">
+        //resolve jQuery-Prototype conflict on '$'
+        // call 'jQuery("stuff")' instead of '$("stuff")' for jQuery code
+        // or use jQuery-plugin style: (function( $ ) { $("stuff").derp(); })( jQuery );
+        jQuery.noConflict();
+    </script>
+    <style type="text/css"> body { margin: 0; padding: 0; color: #333333;
+        background-image:url(''); }
+    </style>
+
+    <!-- framework code -->
+    <script type="text/javascript" src="js/ext/uuid.js"></script>
+		<script type="text/javascript" src="js/ext/peer.min.js"></script>	
+    <script type="text/javascript" src="js/framework/Vec2D.js"></script>
+    <script type="text/javascript" src="js/framework/Service.js"></script>
+    <script type="text/javascript" src="js/framework/EventBus.js"></script>
+    <script type="text/javascript" src="js/framework/Utility.js"></script>
+    <script type="text/javascript" src="js/framework/AudioManager.js"></script>
+    <script type="text/javascript" src="js/framework/BaseView.js"></script>
+    <script type="text/javascript" src="js/framework/MenuView.js"></script>
+		<script type="text/javascript" src="js/framework/Multiplayer.js"></script>
+    <script type="text/javascript" src="js/framework/FormDialog.js"></script>
+    <script type="text/javascript" src="js/framework/TextAreaDialog.js"></script>
+		<script type="text/javascript" src="js/framework/Application.js"></script>
+		<script type="text/javascript" src="js/framework/ResourceProvider.js"></script>
+		<script type="text/javascript" src="js/framework/Graphics.js"></script>
+		<script type="text/javascript" src="js/framework/Animation.js"></script>
+		<script type="text/javascript" src="js/framework/TiledMap.js"></script>
+
+    <!-- data resources -->
+
+    <!-- game code -->
+        <!-- model -->
+    <script type="text/javascript" src="js/model/TopDownWorldModel.js"></script>
+    <script type="text/javascript" src="js/model/TopDownEntityModel.js"></script>
+		<script type="text/javascript" src="js/model/EntityController.js"></script>
+        <!-- view -->
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript">
+        jQuery( document ).ready( function(){
+            app_create();
+        });
+    </script>
+</head>
+
+<body>
+<center>
+	<!-- begin peer connection ui-->
+	PeerID: <input type="text" id="myID" value="not connected" disabled></input>
+	Connection: <input type="text" id="peerID" value="not connected"></input>
+	<input type="button" id="btnConnect" value="Connect" onClick="onBtnConnect();"></input>
+	<input type="button" id="btnHelp" value="Help" onClick="onBtnHelp();"></input>
+	<!-- end peer connection ui-->
+		<br>
+	
+<canvas id="content" width="1024" height="800" style="border:1px solid #000000;" tabindex="1">
+	
+</canvas>
+</center>
+
+</body>
+<hr>
+</html>

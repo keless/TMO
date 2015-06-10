@@ -1,0 +1,8 @@
+{
+	"image":"axeman.png",
+	"format":"gridSub",
+	"width":26,
+	"height":26,
+	"fps":10,
+	"frames":[4,5]
+}

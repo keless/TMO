@@ -1,0 +1,10 @@
+{
+	"image":"derpy.png",
+	"format":"gridSub",
+	"width":96,
+	"height":96,
+	"fps":1,
+	"frames":[2],
+	"paddingX":14,
+	"paddingY":14
+}

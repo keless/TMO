@@ -1,0 +1,11 @@
+{
+	"name":"walk",
+	"image":"derpy.png",
+	"format":"gridSub",
+	"width":96,
+	"height":96,
+	"fps":10,
+	"frames":[43,44,45,46,47,48, 73,74,75,76,77,78],
+	"paddingX":14,
+	"paddingY":14
+}
